@@ -1,0 +1,42 @@
+.white-board .menu {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.88);
+    pointer-events: initial;
+    position: relative;
+    padding: 0px;
+    overflow: initial;
+    flex-flow: column;
+}
+.white-board .menu .menu-container, .white-board .menu .submenu-container {
+    border-radius: 4px;
+    border: 1px solid rgb(213 219 224);
+}
+.white-board .menu button {
+    cursor: pointer;    
+    background-color: transparent;
+    color: #46545f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-width: 0px;
+    border-radius: 0px;
+    outline: none;
+    padding: 0px;
+    transition: background-color 100ms ease-in-out 0s;
+}
+
+.white-board .menu button.active{
+    background-color: #4959AC;
+    border-radius: 4px;
+}
+
+.white-board .menu button.active > img{
+    filter: invert(1) brightness(1.8);
+}
+
+.white-board .menu .submenu-container {
+    position: absolute;
+    left: 51px;
+}
